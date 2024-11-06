@@ -7,6 +7,6 @@ import MyPage from './myPage/myPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MyPage />
+    <App />
   </StrictMode>,
 )
