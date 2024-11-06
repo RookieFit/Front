@@ -1,25 +1,23 @@
 .MyPage {
     background-color: #ECECEC;
-    display: flex;
-    flex-direction: row;
-    gap: 10px; 
-    justify-content: center;
+    max-width: 1,287px;
+    max-height: 678px;    
 }
 
 /* 프로필 시작*/
-.mypage_up_box{
+.profile_up_box{
     display: flex;
     flex-direction: row;
     gap: 15px; 
-    max-width: 1,287px;
-    max-height: 678px;    
+
 }
 
 
 .profile {
     background-color: #ECECEC; 
     display: flex;
-    gap: 15px;  
+    margin-left: 316px;
+    margin-top: 253px;
     min-width: 636px;
     min-height: 678px;
     flex-direction: column;
@@ -31,7 +29,7 @@
     border: thin solid  rgb(153, 151, 151);
     border-radius:50%;
     text-align:center;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 128px;
     background-color: #ffffff;
 
@@ -79,38 +77,77 @@ textarea{
 /* 내 정보 시작*/
 .myinfo {
     background-color: #ECECEC; 
-    display: flex; 
     min-width: 636px;
     min-height: 678px;
+    margin-top: 253px;
+    margin-left: 15px;
 }
 
 .myinfo_up_box{
     width: 100%;
     height: 78px;
-    text-align: justify;
-    display: inline-block;
+    text-align: center;
+
 }
 
 .myinfo_click{
-    width: 38px;
+    width: 38px;    
     height: 114px;
     margin-top: 25px;
-    margin-left: 35px;
+    margin-right:487px;
     font-size: 36px;
+    font-family: sans-serif;
   
 }
 
 .myinfo_edit{
     width: 24px;
     height: 74px;
+    margin-top: 45px;
+    margin-left: 523px;
     font-size: 20px; 
+    font-family: sans-serif;
 }
 
-.myinfo{
-    background-color: #ECECEC; 
+.myinfo_box{
     display: flex;
-    gap: 9px;
-    width: 636px;
-    height: 678px;
-    flex-direction: column;   
+    width: 593px;
+    height: 582px;
+    border: none;
+    border-radius:25px;
+    margin-bottom: 18px;
+    margin-left: 21px;
+    background-color: #afafaf;
+    flex-direction: column ;
+}
+
+.myinfo_box_nickname{
+    width: 531px;
+    height: 52px;
+    display: flex;
+    margin-left: 31px;
+    margin-top: 23px;
+    border-radius: 5px;
+}
+
+.nickname_box{
+    width: 122px;
+    border-radius: 5px;
+    font-size: 20px; 
+    height: 52px;
+    font-size: 20px; 
+    background-color: #ff7272;
+    text-align: center;
+    line-height: 50px;
+}
+.nickname_line{
+    width: 385px;
+    height: 52px;
+    text-align: center;
+    line-height: 50px;
+    border-color: white;
+    border-width: 0px 0px 2px 0px ;
+    border-style: solid;
+    background-color: #afafaf;
+    margin-left: 25px;
 }
