@@ -18,17 +18,19 @@ export default function myPage() {
             <span className='myinfo_click'>내 정보</span>
             <span className='myinfo_edit'> 수정하기</span>
           </div>
-         <div className='myinfo_box'>닉네임</div>
-         <div className='myinfo_box'>이름</div>
-         <div className='myinfo_box'>나이</div>
-         <div className='myinfo_box'>몸무게</div>
-         <div className='myinfo_box'>키</div>
-         <div className='myinfo_box'>근육량</div>
-         <div className='myinfo_box'>체지방량</div>
-         <div className='myinfo_box'>주소</div>
-         <div className='myinfo_box'>헬스장명</div>
+          <div className='myinfo_box'>
+            <div className='myinfo_box_nickname'>닉네임</div>
+            <div className='myinfo_box_name'>이름</div>
+            <div className='myinfo_box_age'>나이</div>
+            <div className='myinfo_box_weight'>몸무게</div>
+            <div className='myinfo_box_hight'>키</div>
+            <div className='myinfo_box_muscle'>근육량</div>
+            <div className='myinfo_box_fat'>체지방량</div>
+            <div className='myinfo_box_address'>주소</div>
+            <div className='myinfo_box_gym_name'>헬스장명</div>
+          </div>
+        </div>
       </div>
-    </div>
     
     <div className="mypage">
         <div className='graph_box'>

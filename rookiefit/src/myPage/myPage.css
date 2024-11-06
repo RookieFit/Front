@@ -6,6 +6,7 @@
     justify-content: center;
 }
 
+/* 프로필 시작*/
 .mypage_up_box{
     display: flex;
     flex-direction: row;
@@ -75,22 +76,34 @@ textarea{
     border-radius: 25px;
 }
 
+/* 내 정보 시작*/
+.myinfo {
+    background-color: #ECECEC; 
+    display: flex; 
+    min-width: 636px;
+    min-height: 678px;
+}
+
 .myinfo_up_box{
-    
+    width: 100%;
+    height: 78px;
+    text-align: justify;
+    display: inline-block;
 }
 
 .myinfo_click{
-    width: 38;
-    height: 114;
+    width: 38px;
+    height: 114px;
+    margin-top: 25px;
+    margin-left: 35px;
     font-size: 36px;
-    text-align: right;
+  
 }
 
 .myinfo_edit{
-    width: 24;
-    height: 74 ;
+    width: 24px;
+    height: 74px;
     font-size: 20px; 
-    text-align: left;
 }
 
 .myinfo{
