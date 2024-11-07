@@ -8,14 +8,13 @@
     margin-top: 88px;
     margin-left: 242px;
 }
-
-
 .myPage_Edit_1{
     background-color: #E0ECEF; 
     display: flex;
     flex-direction: row;
     width: 1285px;
 }
+
 /* 프로필 시작*/
 .profile2{
     display: flex;
@@ -52,7 +51,6 @@
     height: 43px;
     margin-left: 70px;
     text-align:center;
-
 }
 .textarea_1{
     display: inline-block;
@@ -86,7 +84,6 @@
     height: 678px;
     border-radius: 13px; 
 }
- 
 .myinfo_click2{
     margin-top: 15px;
     margin-left: 35PX;
@@ -95,8 +92,6 @@
     justify-content: left;
     align-items: center;
 }
-
-
 .myinfo_edit2{
     margin-right: 39px;
     margin-bottom: 4px;
@@ -105,7 +100,6 @@
     align-items: center;
     display: flex;
 }
-
 .myinfo_box2{
     display: flex;
     width: 593px;
@@ -153,6 +147,7 @@
     max-width: 1297px;
     max-height: 989px;
 }
+
 /*그래프 시작*/
 .graph_box2{
     width: 1297px;
