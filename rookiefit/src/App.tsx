@@ -3,6 +3,8 @@ import './App.css'
 import Header from './layout/header/header';
 import CalenderPage from './calendar/calenderPage';
 import MyPage from './myPage/myPage';
+import MyPage_Edit from './myPage_Edit/myPage_Edit';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <Route path="/login" element={<></>} />
           <Route path="/signup" element={<></>} />
           <Route path="/calendar" element={<CalenderPage />} />
+          <Route path="/mypage_edit" element={<MyPage_Edit />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/calendar" element={<></>} />
           <Route path="/diet" element={<></>} />

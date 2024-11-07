@@ -1,71 +1,21 @@
-import { useState } from 'react';
-import './myPage.css'
-import { Link, useNavigate } from 'react-router-dom';
+import './myPage_Edit.css'
 
-
-
-
-
-
-/*    mypage_edit 이동
-<button   onClick={goToAbout}>프로필 편집 </button>     
-  const navigate = useNavigate();
-    const goToAbout = () => {
-      navigate('/myPage_Edit');
-     };
-*/
-
-
-
-export default function myPage() {
-
-  const myPage_Edit = [
-    {button: "프로필 편집", path: "/myPage_Edit"}
-  ];
-
-  const myinfo_edit = [
-    {button2: "수정하기", path: "/myPage_Edit"}
-  ];
-
-  const [user_NickName, setUserNickName] = useState<string>(
-
-  );
-
-  
-
+export default function myPage_Edit() {
   return (
-    <body className='MyPage'>
-      <div className='mypage_1'>
+    <body className='myPage_Edit'>
+      <div className='myPage_Edit_1'>
         <div className='profile'>
           <div className='profile_up_box'>
-            <div className='profile_image'> <img src='./layout/asses/images/Person.png'></img> </div>  {/* 그림 크기 조절*/}
+           <div className='profile_image'> <img src='./layout/asses/images/Person.png'></img> </div>  {/* 그림 크기 조절*/}
             <div className='profile_nickname'>닉네임자리</div>
-            <div className='profile_message'><textarea disabled>"메시지를 입력하세요"</textarea></div>
-            <div className='profile_edit'>
-              <nav className='button'>
-                {myPage_Edit.map((item, index) => (
-                  <Link key={index} to={item.path} className='button'>
-                    {item.button}
-                  </Link>
-                ))}
-              </nav>
-                  <Link to='/myPage_Edit' className='button' />
-            </div>
-          </div>
+           <div className='profile_message'><textarea>"메시지를 입력하세요"</textarea></div>
+           <div className='profile_edit'> 프로필 편집</div>
+         </div>
         </div>
         <div className='myinfo'>
           <div className='myinfo_up_box'>
             <span className='myinfo_click'>내 정보</span>
-            <span className='myinfo_edit'>
-            <nav className='button2'>
-                {myinfo_edit.map((item, index) => (
-                  <Link key={index} to={item.path} className='button2'>
-                    {item.button2}
-                  </Link>
-                ))}
-              </nav>
-                  <Link to='/myPage_Edit' className='button2' />
-            </span>
+            <span className='myinfo_edit'>수정하기</span>
           </div>
           <div className='myinfo_box'>
             <div className='myinfo_box_info'>
@@ -94,15 +44,15 @@ export default function myPage() {
             </div>
             <div className='myinfo_box_info'>
               <span className= 'name_box'> 체지방</span>
-              <span className= 'name_line'>체체지방</span>
+              <span className= 'name_line'>체지방</span>
             </div>
             <div className='myinfo_box_info'>
               <span className= 'name_box'> 주소</span>
-              <span className= 'name_line'>주소</span>
+              <span className= 'name_line'><textarea className='textarea_2'>"주소를 입력하세요"</textarea></span>
             </div>
             <div className='myinfo_box_info'>
               <span className= 'name_box'> 체육관 이름</span>
-              <span className= 'name_line'>체육관 이름</span>
+              <span className= 'name_line'><textarea className='textarea_2'>"체육관 이름을 입력하세요"</textarea></span>
             </div>   
           </div>
         </div>
