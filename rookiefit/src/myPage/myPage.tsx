@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './myPage.css'
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -27,12 +26,7 @@ export default function myPage() {
     {button2: "수정하기", path: "/myPage_Edit"}
   ];
 
-  const [user_NickName, setUserNickName] = useState<string>(
-
-  );
-
   
-
   return (
     <body className='MyPage'>
       <div className='mypage_1'>
@@ -69,35 +63,35 @@ export default function myPage() {
           </div>
           <div className='myinfo_box'>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 닉네임</span>
+              <span className= 'name_box'> 닉네임 상자</span>
               <span className= 'name_line'>닉네임 </span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 이름</span>
+              <span className= 'name_box'> 이름 상자</span>
               <span className= 'name_line'>이름</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 나이</span>
+              <span className= 'name_box'> 나이 상자</span>
               <span className= 'name_line'>나이</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 몸무게</span>
+              <span className= 'name_box'> 몸무게 상자</span>
               <span className= 'name_line'>몸무게</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'>키</span>
+              <span className= 'name_box'>키 상자</span>
               <span className= 'name_line'>키</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 근력량</span>
+              <span className= 'name_box'> 근력량 상자</span>
               <span className= 'name_line'>근력량</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 체지방</span>
-              <span className= 'name_line'>체체지방</span>
+              <span className= 'name_box'> 체지방 상자</span>
+              <span className= 'name_line'>체지방</span>
             </div>
             <div className='myinfo_box_info'>
-              <span className= 'name_box'> 주소</span>
+              <span className= 'name_box'> 주소 상자</span>
               <span className= 'name_line'>주소</span>
             </div>
             <div className='myinfo_box_info'>
