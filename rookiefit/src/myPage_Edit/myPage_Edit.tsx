@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './myPage_Edit.css'
 import { useState } from 'react';
-
+import person from '../layout/assets/images/Person.png'
 
 export default function myPage_Edit() {
 
@@ -27,34 +27,13 @@ export default function myPage_Edit() {
     }));
   };
 
-  const handleSetTab = (e, key) => {
-    if (e.keyCode === 9) {  // Tab 키를 감지
-      e.preventDefault();
-      let val = e.target.value;
-      let start = e.target.selectionStart;
-      let end = e.target.selectionEnd;
-
-      // 탭을 추가한 값을 업데이트
-      const updatedValue = val.substring(0, start) + "\t" + val.substring(end);
-      setTextValues((prevValues) => ({
-        ...prevValues,
-        [key]: updatedValue
-      }));
-
-      // 커서 위치를 탭 다음으로 이동
-      setTimeout(() => {
-        e.target.selectionStart = e.target.selectionEnd = start + 1;
-      }, 0);
-    }
-  };
-  
   
   return (
     <body className='myPage_Edit'>
       <div className='myPage_Edit_1'>
         <div className='profile2'>
           <div className='profile_up_box2'>
-           <div className='profile_image2'> <img src='./layout/asses/images/Person.png'></img> </div>  {/* 그림 크기 조절*/}
+           <div className='profile_image2'></div>  {/* 그림 크기 조절*/}
             <div className='profile_nickname2'>닉네임자리</div>
             <div className='profile_message'>
             <textarea
@@ -63,7 +42,6 @@ export default function myPage_Edit() {
               placeholder="메시지 입력지"
               value={textValues.textarea1}
               onChange={(e) => handleSetValue(e, 'textarea1')}
-              onKeyDown={(e) => handleSetTab(e, 'textarea1')}
             />
             </div>
             <div className='profile_edit'> 프로필 편집</div>
@@ -92,7 +70,6 @@ export default function myPage_Edit() {
                   data-id="textarea2"
                   placeholder="닉네임 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea2')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea2')}
                 />
               </span>
             </div>
@@ -112,7 +89,6 @@ export default function myPage_Edit() {
                   data-id="textarea3"
                   placeholder="몸무게 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea3')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea3')}
                 />
               </span>
             </div>
@@ -124,7 +100,6 @@ export default function myPage_Edit() {
                  data-id="textarea4"
                   placeholder="키 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea4')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea4')}
                 />
               </span>
             </div>
@@ -136,7 +111,6 @@ export default function myPage_Edit() {
                   data-id="textarea5"
                   placeholder="근력량 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea5')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea5')}
                 />
               </span>
             </div>
@@ -148,7 +122,6 @@ export default function myPage_Edit() {
                   data-id="textarea6"
                   placeholder="체지방 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea6')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea6')}
                   />
               </span>
             </div>
@@ -160,7 +133,6 @@ export default function myPage_Edit() {
                   data-id="textarea7"
                   placeholder="주소 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea7')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea7')}
                 />
               </span>
             </div>
@@ -172,7 +144,6 @@ export default function myPage_Edit() {
                   data-id="textarea8"
                   placeholder="체육관 입력지"
                   onChange={(e) => handleSetValue(e, 'textarea8')}
-                  onKeyDown={(e) => handleSetTab(e, 'textarea8')}
                 />
               </span>
             </div>   
